@@ -31,9 +31,9 @@ static/           figures used on the page
 
 ## Editing notes
 
-- **Code link:** currently a disabled “Code — coming soon” chip in the hero
-  (`index.html`, the `<span class="btn soon">`). When the code is public, swap it
-  for `<a class="btn ghost" href="YOUR_URL">…</a>`.
+- **Paper button** links to `paper.pdf` (the arXiv preprint build of the paper).
+- **Code link:** removed for now. To add one, drop
+  `<a class="btn ghost" href="YOUR_URL">Code</a>` into the `.btns` div in the hero.
 - **arXiv link:** add another `<a class="btn ghost" href="...">arXiv</a>` next to
   the Paper button. You can then replace the heavy `paper.pdf` with the arXiv link
   if you want to keep the repo light.
