@@ -205,7 +205,7 @@
   .qcol .qhead{font-family:var(--display);font-weight:600;font-size:15px;text-align:center;padding:10px;border-bottom:1px solid var(--line);color:var(--ink)}
   .qpair{display:grid;grid-template-rows:1fr 1fr}
   .qpair .qitem{position:relative}
-  .qpair .qitem img{width:100%;height:auto;display:block}
+  .qpair .qitem img{width:100%;aspect-ratio:7/5;object-fit:contain;background:#eef2f8;display:block}
   .qpair .qitem .qlab{
     position:absolute;left:8px;top:8px;font-family:var(--mono);font-size:11px;font-weight:600;
     padding:3px 8px;border-radius:6px;color:#fff;letter-spacing:.04em;
@@ -401,8 +401,8 @@
     <p class="tnote">Small-object localization <b>Acc@0.5 (%)</b>, best per column in <span style="color:var(--teal);font-weight:700">teal</span>. Baselines select from N=10 sampled responses. Full tables and ablations are in the paper.</p>
 
     <!-- qualitative -->
-    <h3 style="font-family:var(--display);font-size:20px;font-weight:600;margin-top:46px;letter-spacing:-.01em">Greedy vs. Ours</h3>
-    <p style="margin-top:6px;max-width:720px">Yellow = ground truth, red = prediction. ACS recovers tight boxes on small targets where greedy decoding drifts.</p>
+    <h3 style="font-family:var(--display);font-size:20px;font-weight:600;margin-top:46px;letter-spacing:-.01em">Qualitative Results</h3>
+    <p style="margin-top:6px;max-width:740px">Each column is a small object — <b>top:</b> Greedy decoding, <b>bottom:</b> our ACS selection. Yellow = ground truth, red = prediction; ACS recovers tight boxes where greedy drifts.</p>
     <div class="qual">
       <div class="qcol reveal">
         <div class="qhead">Vase</div>
